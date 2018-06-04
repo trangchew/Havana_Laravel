@@ -11,7 +11,7 @@ build:
     - phpmd app
     - phpcpd app
     - phpmetrics app
-    - echo build ended!
+    - echo Build success!
 compose:
   database:
     image: mysql
