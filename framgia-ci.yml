@@ -12,7 +12,7 @@ build:
     - phpcpd app
     - phpmetrics app
     - echo build ended!
-compose:
+services:
   database:
     image: mysql
     environment:
