@@ -2,8 +2,6 @@ build:
   phpunit:
     image: dangminhtruong/dockerlarav:latest
     commands:
-    - composer install
-    - npm install
     - framgia-ci run --local
 services:
   database:
