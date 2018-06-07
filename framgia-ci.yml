@@ -13,7 +13,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
 deploy:
   docker:
-    username: octoca
+    username: octocat
     password: password
     email: xdangminhtruongx@gmail.com
     repo: dangminhtruong/Havana_Laravel
