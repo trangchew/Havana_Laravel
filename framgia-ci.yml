@@ -3,16 +3,8 @@ build:
     image: dangminhtruong/dockerlarav:latest
     commands:
     - composer install
-    - vendor/bin/phpunit
+    - npm install
     - framgia-ci run
-  phpcs:
-    image: dangminhtruong/dockerlarav:latest
-    commands:
-    - eslint resources/assets/js
-    - phpmd app
-    - phpcpd app
-    - phpmetrics app
-    - echo build ended!
 services:
   database:
     image: mysql
