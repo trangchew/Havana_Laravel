@@ -4,6 +4,7 @@ build:
     commands:
     - composer install
     - vendor/bin/phpunit
+    - framgia-ci run
   phpcs:
     image: dangminhtruong/dockerlarav:latest
     commands:
