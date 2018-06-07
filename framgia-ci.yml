@@ -4,7 +4,7 @@ build:
     commands:
     - composer install
     - npm install
-    - framgia-ci run
+    - framgia-ci run --local
 services:
   database:
     image: mysql
