@@ -22,7 +22,7 @@ test:
   #     --output-file=.framgia-ci-reports/eslint.xml
   #     resources/assets/js/
   phpcs:
-    command: phpcs --standard=Framgia --report-checkstyle=.framgia-ci-reports/phpcs.xml app
+    command: framgia-ci run
   # phpunit:
   #   command:
   #     - sleep 30
