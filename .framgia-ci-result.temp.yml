@@ -1,4 +1,24 @@
-phpcs:
+eslint:
   comment: true
-  exit_code: 512
+  exit_code: 256
+  ignore: false
+pdepend:
+  comment: true
+  exit_code: 32512
+  ignore: true
+phpcpd:
+  comment: true
+  exit_code: 32512
+  ignore: true
+phpmd:
+  comment: true
+  exit_code: 32512
+  ignore: true
+phpmetrics:
+  comment: true
+  exit_code: 32512
+  ignore: true
+phpunit:
+  comment: true
+  exit_code: 0
   ignore: false
