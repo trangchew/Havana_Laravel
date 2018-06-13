@@ -5,6 +5,8 @@ build:
     - cp .env.testing.example .env
     - composer install
     - php artisan migrate
+    - php artisan db:seed
+    - framgia-ci run --local
 services:
   mysql:
     image: mysql:5.7
