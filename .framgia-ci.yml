@@ -1,4 +1,4 @@
-est:
+test:
   eslint:
     ignore: false
     command: eslint --format=checkstyle
