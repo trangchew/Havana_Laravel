@@ -2,7 +2,7 @@ build:
   phpunit:
     image: dangminhtruong/dockerlarav:latest
     commands:
-    - phpcs --standard=Framgia app
+    - echo '' | phpcs --standard=Framgia app
     - echo dangminhtruong
 services:
   mysql:
