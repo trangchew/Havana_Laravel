@@ -6,7 +6,7 @@ build:
     - composer install
     - php artisan migrate
     - php artisan db:seed
-    - phpcs app
+    - phpcs --standard=Framgia app
     - framgia-ci run --local
 services:
   mysql:
