@@ -3,7 +3,7 @@ build:
     image: dangminhtruong/dockerlarav:latest
     commands:
     - echo '' | phpcs --standard=Framgia app
-    - framgia-ci --local
+    - framgia-ci run --local
 services:
   mysql:
     image: mysql:5.7
