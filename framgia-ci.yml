@@ -2,12 +2,7 @@ build:
   phpunit:
     image: dangminhtruong/dockerlarav:latest
     commands:
-    - cp .env.testing.example .env
-    - composer install
-    - php artisan migrate
-    - php artisan db:seed
     - echo '' | phpcs --standard=Framgia app
-    - framgia-ci run --local
 services:
   mysql:
     image: mysql:5.7
