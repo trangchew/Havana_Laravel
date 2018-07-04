@@ -9,7 +9,7 @@ build:
     - php artisan migrate --database=mysql_test
     - framgia-ci run
 services:
-  mysql:
+  127.0.0.1:
     image: mysql:5.7
     environment:
       MYSQL_DATABASE: homestead
