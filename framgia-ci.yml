@@ -5,11 +5,11 @@ build:
     - cp .env.civ3.example .env
     - php artisan config:clear
     - composer install
-    - framgia-ci test-connect 127.0.0.1 3306 60
+    - framgia-ci test-connect mysql_test 3306 60
     - php artisan migrate --database=mysql_test
     - framgia-ci run
 services:
-  127.0.0.1:
+  mysql:
     image: mysql:5.7
     environment:
       MYSQL_DATABASE: homestead
@@ -33,4 +33,4 @@ deploy:
     username: octocat
     password: password
     email: dangminhtruong@gmail.com
-    repo: dangminhtruong/Havana_Laravell
+    repo: dangminhtruong/Havana_Laravel
