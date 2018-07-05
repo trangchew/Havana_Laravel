@@ -1,2 +1,2 @@
 # Havana_Laravel
-Havana laravel version 1
+Havana laravel version
