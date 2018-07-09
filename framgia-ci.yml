@@ -3,7 +3,7 @@ build:
     image: dangminhtruong/dockerlarav:latest
     commands:
     - cp .env.civ3.example .env
-    - php artisan config:clear
+    - php artisan config:cache
     - composer install
     - framgia-ci test-connect mysql 3306 60
     - php artisan migrate --database=mysql_test
