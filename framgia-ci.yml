@@ -6,6 +6,7 @@ build:
     - php artisan config:cache
     - composer install
     - ./vendor/bin/phpunit
+    - ls
     - framgia-ci test-connect mysql_test 3306 60
     - php artisan migrate --database=mysql
     - framgia-ci run
