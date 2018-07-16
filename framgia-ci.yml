@@ -17,6 +17,13 @@ services:
       MYSQL_USER: homestead
       MYSQL_PASSWORD: secret
       MYSQL_ROOT_PASSWORD: root
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: homestead
+      MYSQL_USER: homestead
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: root
   mysql_test:
     image: mysql:5.7
     environment:
