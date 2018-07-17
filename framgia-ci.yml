@@ -30,8 +30,9 @@ cache:
     - vendor
     - node_modules
 deploy:
-  docker:
-    username: octocat
-    password: password
-    email: dangminhtruong@gmail.com
-    repo: dangminhtruong/Havana_Laravel
+  rocketeer:
+    image: fdplugins/ssh-php:php5
+    when:
+      branch: master
+    commands:
+      - php rocketeer.phar deploy --on=staging --no-interaction
