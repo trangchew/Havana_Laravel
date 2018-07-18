@@ -39,7 +39,7 @@ pipeline:
       # - php artisan migrate --database=mysql_test
       # - php -dzend_extension=xdebug.so vendor/bin/phpunit
   notify:
-    image: chimlon/chatwork
+    image: dangminhtruong/chatwork:latest
     when:
       event: [push]
       status: [ success ]
