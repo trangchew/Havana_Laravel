@@ -39,10 +39,11 @@ pipeline:
       # - php artisan migrate --database=mysql_test
       # - php -dzend_extension=xdebug.so vendor/bin/phpunit
   notify:
-    image: dangminhtruong/chatwork:latest
+    image: fdplugins/chatwork
+    room_id: 97377164
+    token: $$CHATWORK_TOKEN
     when:
       event: [push]
-      status: [ success ]
   rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
