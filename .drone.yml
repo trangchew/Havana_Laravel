@@ -16,6 +16,7 @@ pipeline:
     username: xxdangminhtruongxx@gmail.com
     password: 01292007776t
     from: xdangminhtruongx@gmail.com
+    repo: Hangover
     when:
       status: [ push, changed, failure ]
   rebuild-cache:
