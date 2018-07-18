@@ -10,13 +10,12 @@ pipeline:
     group: laravel
     commands:
       - phpcs --standard=Framgia --encoding=utf-8 app
-  notify:
+  fdsfds:
     image: drillster/drone-email
     host: smtp.gmail.com
     username: xxdangminhtruongxx@gmail.com
     password: 01292007776t
     from: xdangminhtruongx@gmail.com
-    repo: Hangover
     when:
       status: [ push, changed, failure ]
   rebuild-cache:
