@@ -39,9 +39,13 @@ pipeline:
       # - php artisan migrate --database=mysql_test
       # - php -dzend_extension=xdebug.so vendor/bin/phpunit
   notify:
-    image: dangminhtruong/message:latest
+    image: drillster/drone-email
+    host: smtp.gmail.com
+    username: xxdangminhtruongxx@gmail.com
+    password: 01292007776t
+    from: dr.strange
     when:
-      event: [ push, tag, deployment, pull_request ]
+      status: [ push, changed, failure ]
   rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
