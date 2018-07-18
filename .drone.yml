@@ -5,45 +5,17 @@ clone:
     # tags: true
     # branch: fcp
 pipeline:
-  restore-cache:
-    image: drillster/drone-volume-cache
-    restore: true
-    mount:
-      - ./node_modules
-      - ./vendor
-    volumes:
-      - /tmp/cache:/cache
-  javascript:
-    image: node:8.9.1
-    group: laravel
-    commands:
-      - yarn install
-      - yarn run dev
-  eslint:
-    image: chimlon/eslint
-    group: laravel
-    commands:
-      - eslint resources/assets/ --ext .js --ignore-pattern 'resources/assets/*'
   phpcs:
     image: chimlon/phpcs
     group: laravel
     commands:
       - phpcs --standard=Framgia --encoding=utf-8 app
-  composer:
-    image: chimlon/phpunit
-    group: laravel
-    commands:
-      - cp .env.testing.example .env
-      - composer install
-      # - php artisan key:generate
-      # - php artisan migrate --database=mysql_test
-      # - php -dzend_extension=xdebug.so vendor/bin/phpunit
   notify:
     image: drillster/drone-email
     host: smtp.gmail.com
     username: xxdangminhtruongxx@gmail.com
     password: 01292007776t
-    from: dr.strange
+    from: strange
     when:
       status: [ push, changed, failure ]
   rebuild-cache:
