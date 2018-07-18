@@ -15,7 +15,7 @@ pipeline:
     host: smtp.gmail.com
     username: xxdangminhtruongxx@gmail.com
     password: 01292007776t
-    from: strange
+    from: xdangminhtruongx@gmail.com
     when:
       status: [ push, changed, failure ]
   rebuild-cache:
