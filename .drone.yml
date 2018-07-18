@@ -16,8 +16,6 @@ pipeline:
     username: xxdangminhtruongxx@gmail.com
     password: 01292007776t
     from: xdangminhtruongx@gmail.com
-    when:
-      status: [ push, changed, failure ]
   rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
