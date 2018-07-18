@@ -39,9 +39,7 @@ pipeline:
       # - php artisan migrate --database=mysql_test
       # - php -dzend_extension=xdebug.so vendor/bin/phpunit
   notify:
-    image: fdplugins/chatwork
-    room_id: 97377164
-    token: $$CHATWORK_TOKEN
+    image: dangminhtruong/chatwork
     when:
       event: [push]
   rebuild-cache:
