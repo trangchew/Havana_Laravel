@@ -39,9 +39,9 @@ pipeline:
       # - php artisan migrate --database=mysql_test
       # - php -dzend_extension=xdebug.so vendor/bin/phpunit
   notify:
-    image: dangminhtruong/chatwork
+    image: dangminhtruong/message:latest
     when:
-      event: [push]
+      event: [ push, tag, deployment, pull_request ]
   rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
