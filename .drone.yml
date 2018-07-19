@@ -11,11 +11,10 @@ pipeline:
     commands:
       - phpcs --standard=Framgia --encoding=utf-8 app
   notify:
-    image: drillster/drone-email
-    host: smtp.gmail.com
-    username: xxdangminhtruongxx@gmail.com
-    password: 01292007776t
-    from: xdangminhtruongx@gmail.com
+    image: dangminhtruong/drone-chatwork
+    token: c3193229243d288927f108bd7d4606bc
+    room_id: 97377164
+    message: DangMinhTruong
     when:
       status: [ push, changed, failure ]
   rebuild-cache:
