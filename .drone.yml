@@ -22,7 +22,7 @@ pipeline:
       branch: master,
       commit_id: e786dr2,
       create_at: 2018:16:04,
-      commit_message: Remove project,
+      commit_message: Remove_project,
       build_link: https://github.com/dangminhtruong,
       when:
         status: [ push, changed, failure ]
