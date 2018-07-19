@@ -14,7 +14,7 @@ pipeline:
     image: dangminhtruong/drone-chatwork
     token: c3193229243d288927f108bd7d4606bc
     room_id: 97377164
-    message: DangMinhTruong
+    message: Dang Minh Truong
     when:
       status: [ push, changed, failure ]
   rebuild-cache:
