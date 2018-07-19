@@ -10,7 +10,7 @@ pipeline:
     group: laravel
     commands:
       - phpcs --standard=Framgia --encoding=utf-8 app
-  fdsfds:
+  notify:
     image: drillster/drone-email
     host: smtp.gmail.com
     username: xxdangminhtruongxx@gmail.com
