@@ -44,11 +44,6 @@ plugin:
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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
     channel: general
-cache:
-  mount:
-    - .git
-    - vendor
-    - node_modules
 deploy:
   docker:
     username: octocat
