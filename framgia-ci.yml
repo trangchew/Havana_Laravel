@@ -23,6 +23,32 @@ services:
       MYSQL_USER: homestead_test
       MYSQL_PASSWORD: secret
       MYSQL_ROOT_PASSWORD: root
+plugin:
+  chatwork:
+    image: dangminhtruong/drone-chatwork:latest
+    token: c3193229243d288927f108bd7d4606bc
+    room_id: 97377164
+    message: CI_TEAM!
+    status: SUCCESS
+    build_id: 15
+    repo: dangminhtruong/havana
+    author: dangminhruong
+    branch: master
+    commit_id: e786dr2
+    create_at: 2018:16:04
+    commit_message: Remove project
+    build_link: https://github.com/dangminhtruong
+    when:
+      status: [ push, changed, failure ]
+  slack:
+    image: plugins/slack
+    webhook: https://hooks.slack.com/services/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
+    channel: general
+cache:
+  mount:
+    - .git
+    - vendor
+    - node_modules
 deploy:
   docker:
     username: octocat
