@@ -9,12 +9,13 @@ pipeline:
     image: chimlon/phpcs
     group: laravel
     commands:
-      - phpcs --standard=Framgia --encoding=utf-8 app
+      - echo $$token
+      - echo Hava
   notify:
       image: dangminhtruong/drone-chatwork
-      token: c3193229243d288927f108bd7d4606bc
-      room_id: 97377164
-      message: CI_TEAM!
+      token: $$token
+      room_id: $$room_id
+      message: WELCOME TO CI TEAM!
       status: SUCCESS
       build_id: 17
       repo: dangminhtruong/havana
@@ -22,18 +23,10 @@ pipeline:
       branch: master
       commit_id: e786dr2
       create_at: 2018:16:04
-      commit_message: Remove project
+      commit_message: Add Dockerfile
       build_link: https://github.com/dangminhtruong
       when:
         status: [ push, changed, failure ]
-  rebuild-cache:
-    image: drillster/drone-volume-cache
-    rebuild: true
-    mount:
-      - ./node_modules
-      - ./vendor
-    volumes:
-      - /tmp/cache:/cache
   # rocketeer:
   #   image: fdplugins/ssh-php:php5
   #   when:
