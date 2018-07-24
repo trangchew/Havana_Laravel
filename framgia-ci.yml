@@ -3,12 +3,7 @@ build:
     image: daothaison/civ3-workspace:latest
     commands:
     - cp .env.civ3.example .env
-    - php artisan config:clear
-    - composer install
-    - yarn install
-    - framgia-ci test-connect mysql_test 3306 60
-    - php artisan migrate --database=mysql_test
-    - framgia-ci run
+    - echo lala land
 services:
   mysql:
     image: mysql:5.7
@@ -25,10 +20,14 @@ services:
       MYSQL_PASSWORD: secret
       MYSQL_ROOT_PASSWORD: root
 cache:
-  mount:
-    - .git
-    - vendor
-    - node_modules
+  git:
+    folder: .git
+  composer:
+    folder: vendor
+    file: composer.lock
+  nodejs:
+    folder: node_modules
+    file: yarn.lock
 deploy:
   docker:
     username: octocat
