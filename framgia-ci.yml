@@ -25,10 +25,14 @@ services:
       MYSQL_PASSWORD: secret
       MYSQL_ROOT_PASSWORD: root
 cache:
-  mount:
-    - .git
-    - vendor
-    - node_modules
+  git:
+    folder: .git
+  composer:
+    folder: vendor
+    file: composer.lock
+  nodejs:
+    folder: node_modules
+    file: yarn.lock
 deploy:
   docker:
     username: octocat
