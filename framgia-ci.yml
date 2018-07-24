@@ -21,12 +21,12 @@ services:
       MYSQL_ROOT_PASSWORD: root
 cache:
   git:
-    folder: .git
+    folder: server
   composer:
-    folder: vendor
+    folder: app
     file: composer.lock
   nodejs:
-    folder: node_modules
+    folder: config
     file: yarn.lock
 deploy:
   docker:
