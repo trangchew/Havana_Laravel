@@ -3,12 +3,7 @@ build:
     image: daothaison/civ3-workspace:latest
     commands:
     - cp .env.civ3.example .env
-    - php artisan config:clear
-    - composer install
-    - yarn install
-    - framgia-ci test-connect mysql_test 3306 60
-    - php artisan migrate --database=mysql_test
-    - framgia-ci run
+    - echo lala land
 services:
   mysql:
     image: mysql:5.7
@@ -38,7 +33,7 @@ deploy:
     username: octocat
     password: password
     email: dangminhtruong@gmail.com
-    repo: dangminhtruong/Havana_Laravellll
+    repo: dangminhtruong/Havana_Laravel
 project_type: php
 test:
   eslint:
