@@ -33,7 +33,7 @@ deploy:
     username: octocat
     password: password
     email: dangminhtruong@gmail.com
-    repo: dangminhtruong/Havana_Laravel
+    repo: dangminhtruong/Havana_Laravell
 project_type: php
 test:
   eslint:
