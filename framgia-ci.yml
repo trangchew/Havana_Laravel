@@ -21,7 +21,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
 cache:
   git:
-    folder: server
+    folder: routes
   composer:
     folder: app
     file: composer.lock
