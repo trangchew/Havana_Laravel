@@ -32,11 +32,12 @@ cache:
     folder: node_modules
     file: yarn.lock
 deploy:
-  docker:
-    username: octocat
-    password: password
-    email: dangminhtruong@gmail.com
-    repo: dangminhtruong/Havana_Laravell
+  rocketeer:
+    image: fdplugins/ssh-php:php5
+    when:
+      branch: master
+    commands:
+      - php rocketeer.phar deploy --on=staging --no-interaction
 project_type: php
 test:
   eslint:
