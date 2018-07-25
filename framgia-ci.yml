@@ -3,7 +3,10 @@ build:
     image: daothaison/civ3-workspace:latest
     commands:
     - cp .env.civ3.example .env
-    - echo lala land
+    - php artisan config:clear
+    - composer install
+    - yarn install
+    - framgia-ci run
 services:
   mysql:
     image: mysql:5.7
@@ -21,12 +24,12 @@ services:
       MYSQL_ROOT_PASSWORD: root
 cache:
   git:
-    folder: routes
+    folder: .git
   composer:
-    folder: app
+    folder: vendor
     file: composer.lock
   nodejs:
-    folder: config
+    folder: node_modules
     file: yarn.lock
 deploy:
   docker:
