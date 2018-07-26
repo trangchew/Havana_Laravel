@@ -8,12 +8,10 @@
         "php": ">=7.0.0",
         "docker-php/docker-php": "^2.0",
         "fideloper/proxy": "~3.3",
-        "gloudemans/shoppingcart": "^2.5",
-        "knplabs/github-api": "^2.9",
         "laravel/framework": "5.5.*",
-        "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
-        "php-http/guzzle6-adapter": "^1.1"
+        "php-http/guzzle6-adapter": "^1.1",
+        "rap2hpoutre/laravel-log-viewer": "^0.19.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",

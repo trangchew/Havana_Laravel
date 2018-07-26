@@ -1,3 +1,4 @@
+project_type: php
 build:
   phpunit:
     image: daothaison/civ3-workspace:latest
@@ -38,7 +39,6 @@ deploy:
       branch: master
     commands:
       - php rocketeer.phar deploy --on=staging --no-interaction
-project_type: php
 test:
   eslint:
     ignore: false
