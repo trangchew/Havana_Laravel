@@ -14,6 +14,7 @@
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
         "nexmo/laravel": "^1.1",
+        "php-http/guzzle6-adapter": "^1.1",
         "rap2hpoutre/laravel-log-viewer": "^0.19.1",
         "tymon/jwt-auth": "^0.5.12"
     },
