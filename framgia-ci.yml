@@ -24,7 +24,7 @@ build:
       - framgia-ci test-connect mysql_test 3306 60
       - php artisan migrate --database=mysql_test
       - framgia-ci run
-    db_test:
+  feature_test:
     image: daothaison/civ3-workspace:latest
     services:
       mysql:
