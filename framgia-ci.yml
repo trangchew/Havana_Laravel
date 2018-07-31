@@ -27,14 +27,14 @@ build:
   feature_test:
     image: daothaison/civ3-workspace:latest
     services:
-      mysql:
+      mysql_serve:
         image: mysql:5.7
         environment:
           MYSQL_DATABASE: homestead
           MYSQL_USER: homestead
           MYSQL_PASSWORD: secret
           MYSQL_ROOT_PASSWORD: root
-      mysql_test:
+      mysql_unit:
         image: mysql:5.7
         environment:
           MYSQL_DATABASE: homestead_test
