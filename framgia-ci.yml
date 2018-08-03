@@ -57,17 +57,10 @@ test:
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
         --coverage-html=.framgia-ci-reports/coverage
 deploy:
-  rocketeer:
-    image: fdplugins/ssh-php:php5
-    when:
-      branch: master
-    commands:
-      - php rocketeer.phar deploy --on=staging --no-interaction
-  plugin:
     chatwork:
       image: dangminhtruong/drone-chatwork:latest
-      token: $$token
-      room_id: $$room_id
+      token: c3193229243d288927f108bd7d4606bc
+      room_id: 119150330
       message: CI_TEAM
       status: SUCCCESS
 cache:
