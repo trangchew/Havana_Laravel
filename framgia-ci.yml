@@ -60,7 +60,7 @@ deploy:
     chatwork:
       image: dangminhtruong/drone-chatwork:latest
       token: c3193229243d288927f108bd7d4606bc
-      room_id: 119150330
+      room_id: 106651981
       message: CI_TEAM
       status: SUCCCESS
 cache:
