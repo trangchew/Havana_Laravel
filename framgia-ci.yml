@@ -63,6 +63,13 @@ deploy:
       branch: master
     commands:
       - php rocketeer.phar deploy --on=staging --no-interaction
+  plugin:
+    chatwork:
+      image: dangminhtruong/drone-chatwork:latest
+      token: $$token
+      room_id: $$room_id
+      message: CI_TEAM
+      status: SUCCCESS
 cache:
   git:
     folder: .git
