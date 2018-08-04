@@ -3,13 +3,6 @@ build:
   general_test:
     image: daothaison/civ3-workspace:latest
     services:
-      mysql:
-        image: mysql:5.7
-        environment:
-          MYSQL_DATABASE: homestead
-          MYSQL_USER: homestead
-          MYSQL_PASSWORD: secret
-          MYSQL_ROOT_PASSWORD: root
       mysql_test:
         image: mysql:5.7
         environment:
@@ -18,11 +11,6 @@ build:
           MYSQL_PASSWORD: secret
           MYSQL_ROOT_PASSWORD: root
     prepare:
-      - cp .env.civ3.example .env
-      - php artisan config:clear
-      - composer install
-      - framgia-ci test-connect mysql_test 3306 60
-      - php artisan migrate --database=mysql_test
       - framgia-ci run
 test:
   eslint:
@@ -65,7 +53,7 @@ deploy:
     status: SUCCCESS
     when:
       branch: master
-      status: [sucess, error]
+      status: sucess
 cache:
   git:
     folder: .git
