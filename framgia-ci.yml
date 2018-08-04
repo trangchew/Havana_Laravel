@@ -53,7 +53,7 @@ deploy:
     status: SUCCCESS
     when:
       branch: master
-      status: sucess
+      status: success
 cache:
   git:
     folder: .git
