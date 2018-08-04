@@ -51,9 +51,6 @@ deploy:
     room_id: 106651981
     message: CI_TEAM
     status: SUCCCESS
-    when:
-      branch: master
-      status: success
 cache:
   git:
     folder: .git
