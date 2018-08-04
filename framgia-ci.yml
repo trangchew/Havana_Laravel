@@ -57,15 +57,15 @@ test:
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
         --coverage-html=.framgia-ci-reports/coverage
 deploy:
-    chatwork:
-      image: dangminhtruong/drone-chatwork:latest
-      token: c3193229243d288927f108bd7d4606bc
-      room_id: 106651981
-      message: CI_TEAM
-      status: SUCCCESS
-      when:
-        branch: master
-        status: [sucess, error]
+  chatwork:
+    image: dangminhtruong/drone-chatwork:latest
+    token: c3193229243d288927f108bd7d4606bc
+    room_id: 106651981
+    message: CI_TEAM
+    status: SUCCCESS
+    when:
+      branch: master
+      status: [sucess, error]
 cache:
   git:
     folder: .git
