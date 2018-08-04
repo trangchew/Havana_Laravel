@@ -44,13 +44,6 @@ test:
       - php -dzend_extension=xdebug.so vendor/bin/phpunit
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
         --coverage-html=.framgia-ci-reports/coverage
-deploy:
-  chatwork:
-    image: dangminhtruong/drone-chatwork:latest
-    token: c3193229243d288927f108bd7d4606bc
-    room_id: 106651981
-    message: CI_TEAM
-    status: SUCCCESS
 cache:
   git:
     folder: .git
