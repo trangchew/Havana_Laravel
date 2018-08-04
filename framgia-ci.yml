@@ -2,6 +2,8 @@ project_type: php
 build:
   general_test:
     image: daothaison/civ3-workspace:latest
+    environment:
+      MY_NAME: DangMinhTruong
     services:
       mysql_test:
         image: mysql:5.7
@@ -11,6 +13,8 @@ build:
           MYSQL_PASSWORD: secret
           MYSQL_ROOT_PASSWORD: root
     prepare:
+      - echo $MY_NAME
+      - echo $FRAMGIACI_REPO
       - framgia-ci run
 test:
   eslint:
@@ -44,6 +48,16 @@ test:
       - php -dzend_extension=xdebug.so vendor/bin/phpunit
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
         --coverage-html=.framgia-ci-reports/coverage
+deploy:
+  chatwork:
+    image: dangminhtruong/drone-chatwork:latest
+    token: c3193229243d288927f108bd7d4606bc
+    room_id: 106651981
+    message: CI_TEAM
+    status: SUCCCESS
+    when:
+      branch: master
+      status: success
 cache:
   git:
     folder: .git
