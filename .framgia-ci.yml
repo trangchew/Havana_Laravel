@@ -2,7 +2,7 @@
 project_type: php
 test:
   eslint:
-    ignore: false
+    ignore: true
     command: eslint --format=checkstyle
       --output-file=.framgia-ci-reports/eslint.xml
       resources/assets/js/ --ext .js
@@ -24,10 +24,10 @@ test:
       --report-xml=.framgia-ci-reports/metrics.xml
       app
   phpcs:
-    ignore: false
+    ignore: true
     command: echo '' | phpcs --standard=Framgia --report-checkstyle=.framgia-ci-reports/phpcs.xml --ignore=app/Supports/* app
   phpunit:
-    ignore: false
+    ignore: true
     command:
       - php -dzend_extension=xdebug.so vendor/bin/phpunit
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
