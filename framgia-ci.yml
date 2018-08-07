@@ -55,6 +55,14 @@ deploy:
       branch: master
     commands:
       - php rocketeer.phar deploy --on=staging --no-interaction
+  chatwork:
+    image: dangminhtruong/drone-chatwork:latest
+    token: $$chatwork_token
+    room_id: $chatwork_roomid
+    message: [To:3183575] [To:2546142] Please check pull request
+    status: SUCCCESS
+    when:
+      branch: master
 cache:
   git:
     folder: .git
