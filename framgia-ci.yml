@@ -3,7 +3,7 @@ build:
   general_test:
     image: daothaison/civ3-workspace:latest
     environment:
-      MY_NAME: DangMinhTruong
+      MY_NAME: php rocketeer.phar deploy --on=staging --no-interaction
     services:
       mysql_test:
         image: mysql:5.7
@@ -48,21 +48,6 @@ test:
       - php -dzend_extension=xdebug.so vendor/bin/phpunit
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
         --coverage-html=.framgia-ci-reports/coverage
-deploy:
-  rocketeer:
-    image: fdplugins/ssh-php:php5
-    when:
-      branch: master
-    commands:
-      - php rocketeer.phar deploy --on=staging --no-interaction
-  chatwork:
-    image: dangminhtruong/drone-chatwork:latest
-    token: $$chatwork_token
-    room_id: $chatwork_roomid
-    message: "[To:3183575] [To:2546142] Please check pull request"
-    status: SUCCCESS
-    when:
-      branch: master
 cache:
   git:
     folder: .git
