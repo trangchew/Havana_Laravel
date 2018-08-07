@@ -20,7 +20,7 @@ return [
 
     // The root directory where your applications will be deployed
     // This path *needs* to start at the root, ie. start with a /
-    'root_directory' => '/deploy/',
+    'root_directory' => '/home/www/',
 
     // The folder the application will be cloned in
     // Leave empty to use `application_name` as your folder name
@@ -30,11 +30,8 @@ return [
     // Use this to list folders that need to keep their state, like
     // user uploaded data, file-based databases, etc.
     'shared'         => [
-        '.env',
-        'node_modules',
         'storage/logs',
-        'storage/app',
-        'storage/framework',
+        'storage/sessions',
     ],
 
     // Execution
@@ -45,7 +42,7 @@ return [
     'shell'          => false,
 
     // An array of commands to run under shell
-    'shelled'        => ['which', 'ruby', 'npm', 'bower', 'bundle', 'grunt', 'gulp'],
+    'shelled'        => ['which', 'ruby', 'npm', 'bower', 'bundle', 'grunt'],
 
     // Enable use of sudo for some commands
     // You can specify a sudo user by doing
@@ -53,15 +50,18 @@ return [
     'sudo' => false,
 
     // An array of commands to run under sudo
-    'sudoed' => ['deploy'],
+    'sudoed' => [],
 
     // Permissions$
     ////////////////////////////////////////////////////////////////////
 
     'permissions'    => [
+
         // The folders and files to set as web writable
         'files'    => [
+            'app/database/production.sqlite',
             'storage',
+            'public',
         ],
 
         // Here you can configure what actions will be executed to set
@@ -69,7 +69,9 @@ return [
         // a single command as a string or an array of commands
         'callback' => function ($task, $file) {
             return [
-                sprintf('chmod -R 777 %s', $file),
+                sprintf('chmod -R 755 %s', $file),
+                sprintf('chmod -R g+s %s', $file),
+                sprintf('chown -R www-data:www-data %s', $file),
             ];
         },
 

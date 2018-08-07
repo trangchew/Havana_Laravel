@@ -1,4 +1,5 @@
 <?php
+
 return [
 
     // Tasks
@@ -17,22 +18,17 @@ return [
     'before' => [
         'setup'   => [],
         'deploy'  => [],
-        'update' => [],
         'cleanup' => [],
     ],
 
     // Tasks to execute after the core Rocketeer Tasks
     'after'  => [
         'setup'   => [],
-        'deploy'  => [
-            // 'MyTasks\DeployNotification',
-        ],
-        'update'  => [
-            // 'MyTasks\UpdateNotification',
-        ],
+        'deploy'  => [],
         'cleanup' => [],
     ],
 
     // Custom Tasks to register with Rocketeer
     'custom' => [],
+
 ];

@@ -7,7 +7,7 @@ return [
     // The name of the application to deploy
     // This will create a folder of the same name in the root directory
     // configured above, so be careful about the characters used
-    'application_name' => 'havana',
+    'application_name' => 'Havana_Laravel',
 
     // Plugins
     ////////////////////////////////////////////////////////////////////
@@ -38,20 +38,20 @@ return [
     // and store them locally
     'connections'      => [
         'production' => [
-            'host'      => '',
-            'username'  => '',
+            'host'      => '178.128.109.66',
+            'username'  => 'deploy',
             'password'  => '',
-            'key'       => '',
-            'keyphrase' => '',
+            'key'       => '/home/truongdang/.ssh/id_rsa',
+            'keyphrase' => '789852t',
             'agent'     => '',
             'db_role'   => true,
         ],
         'staging' => [
             'host'      => '178.128.109.66',
-            'username'  => 'deploy',
-            'password'  => '',
-            'key'       => '',
-            'keyphrase' => '',
+            'username'  => 'root',
+            'password'  => '789852t@',
+            'key'       => '/home/truongdang/.ssh/id_rsa',
+            'keyphrase' => '789852t',
             'agent'     => '',
             'db_role'   => true,
         ],
