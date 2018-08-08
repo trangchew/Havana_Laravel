@@ -2,12 +2,6 @@ project_type: php
 build:
   general_test:
     image: daothaison/civ3-workspace:latest
-    environment:
-<<<<<<< HEAD
-      MY_NAME: DangMinhTruong
-=======
-      MY_NAME: php rocketeer.phar deploy --on=staging --no-interaction
->>>>>>> 821b1aa45c8ca4e1e778dae6d15d42e79078b5a9
     services:
       mysql_test:
         image: mysql:5.7
