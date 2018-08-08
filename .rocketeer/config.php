@@ -49,7 +49,7 @@ return [
         'staging' => [
             'host'      => '178.128.109.66',
             'username'  => 'root',
-            'password'  => '789852t@',
+            'password'  => '',
             'key'       => '',
             'keyphrase' => '',
             'agent'     => '',

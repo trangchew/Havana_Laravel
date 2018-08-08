@@ -11,8 +11,7 @@ build:
           MYSQL_PASSWORD: secret
           MYSQL_ROOT_PASSWORD: root
     prepare:
-      - echo $MY_NAME
-      - echo $FRAMGIACI_REPO
+      - composer install
       - framgia-ci run
 test:
   eslint:
@@ -47,15 +46,11 @@ test:
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
         --coverage-html=.framgia-ci-reports/coverage
 deploy:
-  chatwork:
-    image: dangminhtruong/drone-chatwork:latest
-    token: c3193229243d288927f108bd7d4606bc
-    room_id: 106651981
-    message: CI_TEAM
-    status: SUCCCESS
+  rocketeer:
+    image: framgiaciteam/autodeploy:latest
     when:
       branch: master
-      status: success
+    run: php rocketeer.phar deploy --on=staging --no-interaction
 cache:
   git:
     folder: .git

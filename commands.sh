@@ -1,11 +1,11 @@
 #!/bin/bash
-mkdir ~/.ssh
-mv id_rsa_do.pub ~/.ssh/id_rsa.pub
-mv id_rsa_do ~/.ssh/id_rsa
-chmod -R 600 ~/.ssh
-echo -e "Host *\n\tStrictHostKeyChecking no\n\tIdentityFile /root/.ssh/id_rsa\n\tAddKeysToAgent yes\n" > ~/.ssh/config
-chmod -R 644 /root/.ssh/known_hosts
-cat /root/.ssh/id_rsa.pub
-cat /root/.ssh/id_rsa
-
-php rocketeer.phar deploy --on=staging --no-interaction
+mkdir /root/.ssh
+echo -e $PLUGIN_PUBLICKEY > /root/.ssh/id_rsa.pub
+echo -e $PLUGIN_PRIVATEKEY > /root/.ssh/id_rsa
+chmod 700 /root/.ssh
+chmod 600 /root/.ssh/id_rsa
+chmod 644 /root/.ssh/id_rsa.pub
+cat /root/.ssh/id_rsa.pub > /root/.ssh/authorized_keys
+echo -e "Host *\n\tStrictHostKeyChecking no\n\tIdentityFile /root/.ssh/id_rsa\n\tAddKeysToAgent yes\n" >> /root/.ssh/config
+chmod 644 /root/.ssh/known_hosts
+$PLUGIN_RUN
