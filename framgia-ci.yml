@@ -1,7 +1,7 @@
 project_type: php
 build:
   general_test:
-    image: daothaison/civ3-workspace:latest
+    image: framgiaciteam/laravel-workspace:latest
     services:
       mysql_test:
         image: mysql:5.7
@@ -11,12 +11,12 @@ build:
           MYSQL_PASSWORD: secret
           MYSQL_ROOT_PASSWORD: root
     prepare:
-      - echo '' | phpcs --standard=Framgia app
       - composer install
-      - framgia-ci run
+      - eslint resources/assets/js --fix
+      - echo '' | phpcs --standard=Framgia --fix
 test:
   eslint:
-    ignore: true
+    ignore: false
     command: eslint --format=checkstyle
       --output-file=.framgia-ci-reports/eslint.xml
       resources/assets/js/ --ext .js
@@ -38,20 +38,14 @@ test:
       --report-xml=.framgia-ci-reports/metrics.xml
       app
   phpcs:
-    ignore: true
+    ignore: false
     command: echo '' | phpcs --standard=Framgia --report-checkstyle=.framgia-ci-reports/phpcs.xml --ignore=app/Supports/* app
   phpunit:
-    ignore: true
+    ignore: false
     command:
       - php -dzend_extension=xdebug.so vendor/bin/phpunit
         --coverage-clover=.framgia-ci-reports/coverage-clover.xml
         --coverage-html=.framgia-ci-reports/coverage
-deploy:
-  rocketeer:
-    image: framgiaciteam/autodeploy:latest
-    when:
-      branch: master
-    run: php rocketeer.phar deploy --on=staging --no-interaction
 cache:
   git:
     folder: .git
