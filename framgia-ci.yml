@@ -12,14 +12,13 @@ build:
           MYSQL_ROOT_PASSWORD: root
     prepare:
       - composer install
-      - eslint resources/assets/js --fix
-      - echo '' | phpcs --standard=Framgia --fix
 test:
   eslint:
     ignore: false
     command: eslint --format=checkstyle
       --output-file=.framgia-ci-reports/eslint.xml
       resources/assets/js/ --ext .js
+    auto_fix: eslint resources/assets/js --fix
   phpcpd:
     ignore: true
     command: phpcpd --log-pmd=.framgia-ci-reports/phpcpd.xml app
@@ -40,6 +39,7 @@ test:
   phpcs:
     ignore: false
     command: echo '' | phpcs --standard=Framgia --report-checkstyle=.framgia-ci-reports/phpcs.xml --ignore=app/Supports/* app
+    auto_fix: echo '' | phpcs --standard=Framgia --fix
   phpunit:
     ignore: false
     command:
