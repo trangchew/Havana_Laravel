@@ -1,0 +1,265 @@
+20180807214539
+20180807215354
+/usr/bin/git
+/usr/bin/git
+$ /usr/bin/git clone "https://dangminhtruong:789852t%40@github.com/dangminhtruong/Havana_Laravel.git" "/home/www/Havana_Laravel/releases/20180808081053" --branch="master" --depth="1"
+/usr/bin/git clone "https://dangminhtruong:789852t%40@github.com/dangminhtruong/Havana_Laravel.git" "/home/www/Havana_Laravel/releases/20180808081053" --branch="master" --depth="1"
+Cloning into '/home/www/Havana_Laravel/releases/20180808081053'...
+/usr/bin/git
+/usr/bin/git
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ /usr/bin/git submodule update --init --recursive
+cd /home/www/Havana_Laravel/releases/20180808081053
+/usr/bin/git submodule update --init --recursive
+
+
+/usr/bin/composer
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ /usr/bin/composer install --no-interaction --no-dev --prefer-dist
+cd /home/www/Havana_Laravel/releases/20180808081053
+/usr/bin/composer install --no-interaction --no-dev --prefer-dist
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Loading composer repositories with package information
+Installing dependencies from lock file
+Package operations: 64 installs, 0 updates, 0 removals
+  - Installing symfony/process (v3.4.13): Loading from cache
+  - Installing symfony/polyfill-ctype (v1.8.0): Loading from cache
+  - Installing symfony/filesystem (v4.1.2): Loading from cache
+  - Installing symfony/options-resolver (v4.1.2): Loading from cache
+  - Installing psr/http-message (1.0.1): Loading from cache
+  - Installing php-http/message-factory (v1.0.2): Loading from cache
+  - Installing php-http/promise (v1.0.0): Loading from cache
+  - Installing php-http/httplug (v1.1.0): Loading from cache
+  - Installing php-http/discovery (1.4.0): Loading from cache
+  - Installing php-http/socket-client (v1.4.0): Loading from cache
+  - Installing clue/stream-filter (v1.4.0): Loading from cache
+  - Installing php-http/message (1.6.0): Loading from cache
+  - Installing php-http/client-common (1.7.0): Loading from cache
+  - Installing guzzlehttp/psr7 (1.4.2): Loading from cache
+  - Installing php-http/multipart-stream-builder (1.0.0): Loading from cache
+  - Installing symfony/yaml (v4.1.2): Loading from cache
+  - Installing symfony/serializer (v4.1.2): Loading from cache
+  - Installing php-jsonpointer/php-jsonpointer (v3.0.2): Loading from cache
+  - Installing jeremykendall/php-domain-parser (3.0.0): Loading from cache
+  - Installing league/uri (4.2.2): Loading from cache
+  - Installing jane-php/json-schema-runtime (v4.0.1): Loading from cache
+  - Installing jane-php/open-api-runtime (v4.0.1): Loading from cache
+  - Installing docker-php/docker-php-api (v4.1.36.1): Loading from cache
+  - Installing docker-php/docker-php (v2.0.0): Loading from cache
+  - Installing doctrine/inflector (v1.3.0): Loading from cache
+  - Installing doctrine/lexer (v1.0.1): Loading from cache
+  - Installing erusev/parsedown (1.7.1): Loading from cache
+  - Installing vlucas/phpdotenv (v2.5.0): Loading from cache
+  - Installing symfony/css-selector (v4.1.2): Loading from cache
+  - Installing tijsverkoyen/css-to-inline-styles (2.2.1): Loading from cache
+  - Installing symfony/polyfill-mbstring (v1.8.0): Loading from cache
+  - Installing symfony/var-dumper (v3.4.13): Loading from cache
+  - Installing symfony/routing (v3.4.13): Loading from cache
+  - Installing paragonie/random_compat (v2.0.17): Loading from cache
+  - Installing symfony/polyfill-php70 (v1.8.0): Loading from cache
+  - Installing symfony/http-foundation (v3.4.13): Loading from cache
+  - Installing symfony/event-dispatcher (v4.1.2): Loading from cache
+  - Installing psr/log (1.0.2): Loading from cache
+  - Installing symfony/debug (v3.4.13): Loading from cache
+  - Installing symfony/http-kernel (v3.4.13): Loading from cache
+  - Installing symfony/finder (v3.4.13): Loading from cache
+  - Installing symfony/console (v3.4.13): Loading from cache
+  - Installing egulias/email-validator (2.1.4): Loading from cache
+  - Installing swiftmailer/swiftmailer (v6.1.2): Loading from cache
+  - Installing ramsey/uuid (3.8.0): Loading from cache
+  - Installing psr/simple-cache (1.0.1): Loading from cache
+  - Installing psr/container (1.0.0): Loading from cache
+  - Installing symfony/translation (v4.1.2): Loading from cache
+  - Installing nesbot/carbon (1.32.0): Loading from cache
+  - Installing mtdowling/cron-expression (v1.2.1): Loading from cache
+  - Installing monolog/monolog (1.23.0): Loading from cache
+  - Installing league/flysystem (1.0.45): Loading from cache
+  - Installing laravel/framework (v5.5.40): Loading from cache
+  - Installing fideloper/proxy (3.3.4): Loading from cache
+  - Installing guzzlehttp/promises (v1.3.1): Loading from cache
+  - Installing jakub-onderka/php-console-color (0.1): Loading from cache
+  - Installing nikic/php-parser (v4.0.3): Loading from cache
+  - Installing jakub-onderka/php-console-highlighter (v0.3.2): Loading from cache
+  - Installing dnoegel/php-xdg-base-dir (0.1): Loading from cache
+  - Installing psy/psysh (v0.9.6): Loading from cache
+  - Installing laravel/tinker (v1.0.7): Loading from cache
+  - Installing guzzlehttp/guzzle (6.3.3): Loading from cache
+  - Installing php-http/guzzle6-adapter (v1.1.1): Loading from cache
+  - Installing rap2hpoutre/laravel-log-viewer (v0.19.1): Loading from cache
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover
+Discovered Package: fideloper/proxy
+Discovered Package: laravel/tinker
+Discovered Package: nesbot/carbon
+Discovered Package: rap2hpoutre/laravel-log-viewer
+Package manifest generated successfully.
+/usr/bin/npm
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ /usr/bin/npm install
+cd /home/www/Havana_Laravel/releases/20180808081053
+/usr/bin/npm install
+> node-sass@4.8.3 install /home/www/Havana_Laravel/releases/20180808081053/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /root/.npm/node-sass/4.8.3/linux-x64-57_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /home/www/Havana_Laravel/releases/20180808081053/node_modules/webpack/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.8.3 postinstall /home/www/Havana_Laravel/releases/20180808081053/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/www/Havana_Laravel/releases/20180808081053/node_modules/node-sass/vendor/linux-x64-57/binding.node
+Testing binary
+Binary is fine
+
+> gifsicle@3.0.4 postinstall /home/www/Havana_Laravel/releases/20180808081053/node_modules/gifsicle
+> node lib/install.js
+
+  ✔ gifsicle pre-build test passed successfully
+
+> mozjpeg@5.0.0 postinstall /home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg
+> node lib/install.js
+
+  ⚠ The `/home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg/vendor/cjpeg` binary doesn't seem to work correctly
+  ⚠ mozjpeg pre-build test failed
+  ℹ compiling from source
+  ✖ Error: autoreconf -fiv && ./configure --disable-shared --disable-dependency-tracking --with-jpeg8  --prefix="/home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg/vendor" --bindir="/home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg/vendor" --libdir="/home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg/vendor" && make -j1 && make install -j1
+Command failed: ./configure --disable-shared --disable-dependency-tracking --with-jpeg8  --prefix="/home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg/vendor" --bindir="/home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg/vendor" --libdir="/home/www/Havana_Laravel/releases/20180808081053/node_modules/mozjpeg/vendor"
+configure: error: no nasm (Netwide Assembler) found
+
+    at ChildProcess.exithandler (child_process.js:275:12)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+
+> optipng-bin@3.1.4 postinstall /home/www/Havana_Laravel/releases/20180808081053/node_modules/optipng-bin
+> node lib/install.js
+
+  ✔ optipng pre-build test passed successfully
+
+> pngquant-bin@4.0.0 postinstall /home/www/Havana_Laravel/releases/20180808081053/node_modules/pngquant-bin
+> node lib/install.js
+
+  ✔ pngquant pre-build test passed successfully
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1610 packages in 50.497s
+
+
+$ rm -rf /home/www/Havana_Laravel/releases/20180808081053/storage/logs
+rm -rf /home/www/Havana_Laravel/releases/20180808081053/storage/logs
+
+$ ln -s /home/www/Havana_Laravel/shared/storage/logs /home/www/Havana_Laravel/releases/20180808081053/storage/logs-temp
+$ mv -Tf /home/www/Havana_Laravel/releases/20180808081053/storage/logs-temp /home/www/Havana_Laravel/releases/20180808081053/storage/logs
+ln -s /home/www/Havana_Laravel/shared/storage/logs /home/www/Havana_Laravel/releases/20180808081053/storage/logs-temp
+mv -Tf /home/www/Havana_Laravel/releases/20180808081053/storage/logs-temp /home/www/Havana_Laravel/releases/20180808081053/storage/logs
+
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ chmod -R 755 /home/www/Havana_Laravel/releases/20180808081053/app/database/production.sqlite
+$ chmod -R g+s /home/www/Havana_Laravel/releases/20180808081053/app/database/production.sqlite
+$ chown -R www-data:www-data /home/www/Havana_Laravel/releases/20180808081053/app/database/production.sqlite
+cd /home/www/Havana_Laravel/releases/20180808081053
+chmod -R 755 /home/www/Havana_Laravel/releases/20180808081053/app/database/production.sqlite
+chmod -R g+s /home/www/Havana_Laravel/releases/20180808081053/app/database/production.sqlite
+chown -R www-data:www-data /home/www/Havana_Laravel/releases/20180808081053/app/database/production.sqlite
+chmod: cannot access '/home/www/Havana_Laravel/releases/20180808081053/app/database/production.sqlite': No such file or directory
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ chmod -R 755 /home/www/Havana_Laravel/releases/20180808081053/storage
+$ chmod -R g+s /home/www/Havana_Laravel/releases/20180808081053/storage
+$ chown -R www-data:www-data /home/www/Havana_Laravel/releases/20180808081053/storage
+cd /home/www/Havana_Laravel/releases/20180808081053
+chmod -R 755 /home/www/Havana_Laravel/releases/20180808081053/storage
+chmod -R g+s /home/www/Havana_Laravel/releases/20180808081053/storage
+chown -R www-data:www-data /home/www/Havana_Laravel/releases/20180808081053/storage
+
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ chmod -R 755 /home/www/Havana_Laravel/releases/20180808081053/public
+$ chmod -R g+s /home/www/Havana_Laravel/releases/20180808081053/public
+$ chown -R www-data:www-data /home/www/Havana_Laravel/releases/20180808081053/public
+cd /home/www/Havana_Laravel/releases/20180808081053
+chmod -R 755 /home/www/Havana_Laravel/releases/20180808081053/public
+chmod -R g+s /home/www/Havana_Laravel/releases/20180808081053/public
+chown -R www-data:www-data /home/www/Havana_Laravel/releases/20180808081053/public
+
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ yarn install
+cd /home/www/Havana_Laravel/releases/20180808081053
+yarn install
+yarn install v1.7.0
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info fsevents@1.2.4: The platform "linux" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+Done in 53.48s.
+$ cd /home/www/Havana_Laravel/releases/20180808081053
+$ npm run dev
+cd /home/www/Havana_Laravel/releases/20180808081053
+npm run dev
+> @ dev /home/www/Havana_Laravel/releases/20180808081053
+> npm run development
+
+
+> @ development /home/www/Havana_Laravel/releases/20180808081053
+> cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js
+
+  0% compiling 10% building modules 0/1 modules 1 active ...081053/resources/assets/sass/app.scss                                          10% building modules 1/1 modules 0 active 10% building modules 1/2 modules 1 active ...0808081053/resources/assets/js/app.js 10% building modules 1/3 modules 2 active ...081053/resources/assets/sass/app.scss 10% building modules 2/3 modules 1 active ...0808081053/resources/assets/js/app.js 10% building modules 2/4 modules 2 active ...081053/resources/assets/sass/app.scss 10% building modules 2/5 modules 3 active ...modules/style-loader/lib/addStyles.js 10% building modules 3/5 modules 2 active ...081053/resources/assets/sass/app.scss 10% building modules 4/5 modules 1 active ...081053/resources/assets/sass/app.scss 10% building modules 4/6 modules 2 active ...node_modules/style-loader/lib/urls.js 10% building modules 4/7 modules 3 active ...1053/resources/assets/js/bootstrap.js 10% building modules 5/7 modules 2 active ...1053/resources/assets/js/bootstrap.js 10% building modules 5/8 modules 3 active ...3/node_modules/vue/dist/vue.common.js 10% building modules 6/8 modules 2 active ...1053/resources/assets/js/bootstrap.js 10% building modules 6/9 modules 3 active ...ts/js/components/ExampleComponent.vue 10% building modules 7/9 modules 2 active ...ts/js/components/ExampleComponent.vue 10% building modules 8/9 modules 1 active ...081053/resources/assets/sass/app.scss 10% building modules 8/10 modules 2 active ...ode_modules/timers-browserify/main.js 10% building modules 8/11 modules 3 active ...ode_modules/webpack/buildin/global.js 11% building modules 9/11 modules 2 active ...ode_modules/webpack/buildin/global.js 11% building modules 9/12 modules 3 active ...ts/js/components/ExampleComponent.vue 11% building modules 9/13 modules 4 active ...ts/js/components/ExampleComponent.vue 11% building modules 10/13 modules 3 active ...ts/js/components/ExampleComponent.vue 11% building modules 11/13 modules 2 active ...ts/js/components/ExampleComponent.vue 11% building modules 11/14 modules 3 active ...ue-loader/lib/component-normalizer.js 11% building modules 11/15 modules 4 active ...-sass/assets/javascripts/bootstrap.js 11% building modules 12/15 modules 3 active ...-sass/assets/javascripts/bootstrap.js 11% building modules 13/15 modules 2 active ...-sass/assets/javascripts/bootstrap.js 11% building modules 13/16 modules 3 active ...8081053/node_modules/lodash/lodash.js 11% building modules 14/16 modules 2 active ...8081053/node_modules/lodash/lodash.js 11% building modules 15/16 modules 1 active ...081053/resources/assets/sass/app.scss 11% building modules 15/17 modules 2 active ...ode_modules/webpack/buildin/module.js 11% building modules 15/18 modules 3 active ..._modules/setimmediate/setImmediate.js 11% building modules 16/18 modules 2 active ..._modules/setimmediate/setImmediate.js 12% building modules 17/18 modules 1 active ...081053/resources/assets/sass/app.scss 12% building modules 17/19 modules 2 active ...81053/node_modules/process/browser.js 12% building modules 18/19 modules 1 active ...081053/resources/assets/sass/app.scss                                          12% building modules 19/19 modules 0 active 12% building modules 19/20 modules 1 active ...de_modules/css-loader/lib/css-base.js 12% building modules 19/21 modules 2 active ..._modules/css-loader/lib/url/escape.js 12% building modules 20/21 modules 1 active ...de_modules/css-loader/lib/css-base.js                                          12% building modules 21/21 modules 0 active 12% building modules 21/22 modules 1 active ...trap/glyphicons-halflings-regular.eot 12% building modules 21/23 modules 2 active ...ap/glyphicons-halflings-regular.woff2 12% building modules 21/24 modules 3 active ...rap/glyphicons-halflings-regular.woff 12% building modules 21/25 modules 4 active ...trap/glyphicons-halflings-regular.ttf 12% building modules 21/26 modules 5 active ...trap/glyphicons-halflings-regular.svg 12% building modules 22/26 modules 4 active ...trap/glyphicons-halflings-regular.svg 12% building modules 23/26 modules 3 active ...trap/glyphicons-halflings-regular.svg 12% building modules 24/26 modules 2 active ...trap/glyphicons-halflings-regular.svg 13% building modules 25/26 modules 1 active ...trap/glyphicons-halflings-regular.svg                                          13% building modules 26/26 modules 0 active                                 71% sealing 72% optimizing 73% basic module optimization       74% module optimization 75% advanced module optimization     76% basic chunk optimization       77% chunk optimization 78% advanced chunk optimization 13% building modules 26/27 modules 1 active ...081053/resources/assets/sass/app.scss                                          13% building modules 27/27 modules 0 active      79% module and chunk tree optimization         80% chunk modules optimization 81% advanced chunk modules optimization                     82% module reviving 83% module order optimization    84% module id optimization         85% chunk reviving 86% chunk order optimization    87% chunk id optimization               88% hashing 89% module assets processing  90% chunk assets processing 91% additional chunk assets processing                          92% recording 91% additional asset processing    92% chunk asset optimization       94% asset optimization           95% emitting ERROR  Failed to compile with 1 errors01:12:59
+
+This dependency was not found:
+
+* axios in ./resources/assets/js/bootstrap.js
+
+To install it, you can run: npm install --save axios
+                                                                                                                 Asset     Size  Chunks                    Chunk Names
+  fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1  20.1 kB          [emitted]         
+fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb    18 kB          [emitted]         
+ fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158  23.4 kB          [emitted]         
+  fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512  45.4 kB          [emitted]         
+  fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760   109 kB          [emitted]         
+                                                                                               /js/app.js   927 kB       0  [emitted]  [big]  /js/app
+                                                                                             /css/app.css   147 kB       0  [emitted]         /js/app
+
+WARNING in ./resources/assets/js/bootstrap.js
+Module not found: Error: Can't resolve 'jquery' in '/home/www/Havana_Laravel/releases/20180808081053/resources/assets/js'
+ @ ./resources/assets/js/bootstrap.js 11:29-46
+ @ ./resources/assets/js/app.js
+ @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss
+
+ERROR in ./resources/assets/js/bootstrap.js
+Module not found: Error: Can't resolve 'axios' in '/home/www/Havana_Laravel/releases/20180808081053/resources/assets/js'
+ @ ./resources/assets/js/bootstrap.js 22:15-31
+ @ ./resources/assets/js/app.js
+ @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! @ development: `cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the @ development script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-08-08T01_12_59_537Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! @ dev: `npm run development`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the @ dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-08-08T01_12_59_547Z-debug.log
+$ ln -s /home/www/Havana_Laravel/releases/20180808081053 /home/www/Havana_Laravel/current-temp
+$ mv -Tf /home/www/Havana_Laravel/current-temp /home/www/Havana_Laravel/current
+ln -s /home/www/Havana_Laravel/releases/20180808081053 /home/www/Havana_Laravel/current-temp
+mv -Tf /home/www/Havana_Laravel/current-temp /home/www/Havana_Laravel/current
+
+<fg=cyan>staging/0</fg=cyan> |=> Successfully deployed release 20180808081053
+<fg=cyan>staging/0</fg=cyan> |=> No releases to prune from the server

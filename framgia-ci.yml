@@ -39,7 +39,7 @@ test:
   phpcs:
     ignore: false
     command: echo '' | phpcs --standard=Framgia --report-checkstyle=.framgia-ci-reports/phpcs.xml --ignore=app/Supports/* app
-    auto_fix: echo '' | phpcs --standard=Framgia --fix
+    auto_fix: phpcbf --standard=Framgia --fix
   phpunit:
     ignore: false
     command:

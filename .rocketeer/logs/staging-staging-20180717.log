@@ -1,0 +1,8 @@
+$ mkdir -p /deploy/havana/staging/releases
+mkdir -p /deploy/havana/staging/releases
+
+$ mkdir -p /deploy/havana/staging/current
+mkdir -p /deploy/havana/staging/current
+
+$ mkdir -p /deploy/havana/staging/shared
+mkdir -p /deploy/havana/staging/shared
